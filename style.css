@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.animate_svg{
+    margin-top: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#file-small{
+    animation-name: small-file;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes small-file {
+    0%{
+        transform: scale(1);
+        translate: -6% 9%;
+    }
+    10%{        
+        translate: 1% 2%;
+        transform: scale(0.9);
+    }
+    20%{        
+        translate: 8% 2%;
+        transform: scale(0.8);
+    }
+    30%{        
+        translate: 17% 4%;
+        transform: scale(0.7);
+    }
+    40%{        
+        translate: 24% 7%;
+        transform: scale(0.6);
+    }
+    50%{        
+    translate: 29% 14%;
+    transform: scale(0.5);
+    }
+    100%{
+    translate: 29% 14%;
+    transform: scale(0.5);
+    }
+}
+
+#text-small{
+    transform-box: content-box;
+    transform: scaleX(0);
+    animation-name: small-text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes small-text {
+    0%{
+        transform: scaleX(0);
+    }
+    50%{
+        transform: scaleX(0);
+    }
+    100%{        
+        transform: scaleX(1);
+    }
+}
+
+#file-med{
+    animation-name: med-file;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes med-file {
+    0%{
+    transform: scaleX(1);
+    translate: 12% 10%;
+    }
+    15%{
+    translate: 7% 1%;
+    }
+    29%{
+    translate: 4% 0%;
+    }
+    40%{
+    translate: 0% 5%;
+    }
+    50%{
+    translate: -2% 11%;
+    }
+    60%{
+    transform: scale(0.8);
+    translate: -3% 15%;
+    }
+    75%{
+    transform: scale(0.5);
+    translate: 4% 30%;
+    }
+    100%{
+    transform: scale(0.5);
+    translate: 4% 30%;
+    }
+}
+
+#text-med{
+    transform-box: content-box;
+    transform: scaleX(0);
+    animation-name: med-text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes med-text {
+    0%{
+        transform: scaleX(0);
+    }
+    75%{
+        transform: scaleX(0);
+    }
+    100%{        
+        transform: scaleX(1);
+    }
+}
+
+#Vector_17{    
+    transform-box: content-box;
+    transform-origin: top left;
+    animation-name: fint;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fint {
+    0%{
+        rotate: 0;
+    }
+    40%{
+        rotate: 7deg;
+    }
+    50%{
+        rotate: none ;
+    }
+}
+
+#file-men{
+    animation-name: fint-file;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fint-file {
+    0%{
+        translate: none;
+    }
+    40%{
+        translate: -2% 0%;
+    }
+    100%{
+        translate: 50% 0%;
+    }
+}
